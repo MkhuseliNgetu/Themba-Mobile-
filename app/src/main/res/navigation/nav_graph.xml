@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/Home">
+
+    <fragment
+        android:id="@+id/Home"
+        android:name="com.example.thembamobile.Home"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/OpenBookingSession"
+            app:destination="@id/BookSession" />
+        <action
+            android:id="@+id/openCounselorSearch"
+            app:destination="@id/findCounselorsNearMe" />
+    </fragment>
+    <fragment
+        android:id="@+id/BookSession"
+        android:name="com.example.thembamobile.BookSession"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_booksession">
+
+        <action
+            android:id="@+id/ReturnToHomeFromBookingSession"
+            app:destination="@id/Home" />
+    </fragment>
+    <fragment
+        android:id="@+id/findCounselorsNearMe"
+        android:name="com.example.thembamobile.FindCounselorsNearMe"
+        android:label="fragment_find_counselors_near_me"
+        tools:layout="@layout/fragment_find_counselors_near_me" >
+        <action
+            android:id="@+id/ReturnToHomeFromCounselorsNearMe"
+            app:destination="@id/Home" />
+    </fragment>
+</navigation>
