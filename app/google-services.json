@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "953199799568",
+    "project_id": "themba-mobile",
+    "storage_bucket": "themba-mobile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953199799568:android:06a2b942a9d0e9cdf10995",
+        "android_client_info": {
+          "package_name": "com.example.thembamobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "953199799568-351l8hb6kivnclp8u4lar0aphmocj6mq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4WSQenm6Kz0g2MKs7PjqWGC9xBUf5BVQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "953199799568-351l8hb6kivnclp8u4lar0aphmocj6mq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
