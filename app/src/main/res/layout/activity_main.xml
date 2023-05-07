@@ -15,11 +15,10 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/material_dynamic_primary40"
-            app:popupTheme="@style/Theme.ThembaMobile.PopupOverlay" />
+            android:background="#00BCD4"
+            app:popupTheme="@style/Theme.ThembaMobile" />
 
     </com.google.android.material.appbar.AppBarLayout>
-
-    <include layout="@layout/content_main" />
+    <include layout="@layout/content_main"  />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

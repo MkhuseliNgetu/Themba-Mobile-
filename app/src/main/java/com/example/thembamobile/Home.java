@@ -18,26 +18,25 @@ public class Home extends Fragment {
     private FragmentHomeBinding binding;
     private Button FindCounselorsButton;
     private Button BookSessionButton;
+
+    private View HomeWindow;
     @Override
     public View onCreateView(
             LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState
     ) {
 
-        binding = FragmentHomeBinding.inflate(inflater, container, false);
-        return binding.getRoot();
 
-    }
 
-    public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
+        HomeWindow = inflater.inflate(R.layout.fragment_home, container, false);
+        //binding = FragmentHomeBinding.inflate(inflater, container, false);
 
         //Initialize buttons
-        FindCounselorsButton = view.findViewById(R.id.FindCounselorsButton);
-        BookSessionButton = view.findViewById(R.id.BookSessionButton);
+        //FindCounselorsButton = HomeWindow.findViewById(R.id.FindCounselorsButton);
+        //BookSessionButton = HomeWindow.findViewById(R.id.BookSessionButton);
 
         //Add logic to buttons
-        FindCounselorsButton.setOnClickListener(new View.OnClickListener() {
+        /*FindCounselorsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(Home.this)
@@ -51,7 +50,17 @@ public class Home extends Fragment {
                NavHostFragment.findNavController(Home.this)
                        .navigate(R.id.OpenBookingSession);
            }
-       });
+       });*/
+
+        return HomeWindow;
+
+    }
+
+    public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+
+
     }
 
     @Override

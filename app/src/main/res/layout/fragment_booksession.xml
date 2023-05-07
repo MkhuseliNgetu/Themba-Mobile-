@@ -27,11 +27,14 @@
 
     <EditText
         android:id="@+id/PatientName"
-        android:layout_width="243dp"
-        android:layout_height="49dp"
+        android:layout_width="255dp"
+        android:layout_height="53dp"
+        android:background="@drawable/user_inputs_rounded"
+        android:elevation="2dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="First Name"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.529"
@@ -41,39 +44,48 @@
 
     <EditText
         android:id="@+id/PatientSurname"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="254dp"
+        android:layout_height="54dp"
+        android:background="@drawable/user_inputs_rounded"
+        android:elevation="2dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text=" Last Name"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.535"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.444" />
+        app:layout_constraintVertical_bias="0.443" />
 
     <EditText
         android:id="@+id/PatientID"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="259dp"
+        android:layout_height="49dp"
+        android:background="@drawable/user_inputs_rounded"
+        android:elevation="2dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Identification Number"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.529" />
+        app:layout_constraintVertical_bias="0.532" />
 
     <EditText
         android:id="@+id/SessionDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:background="@drawable/user_inputs_rounded"
+        android:elevation="2dp"
         android:ems="10"
         android:inputType="date"
         android:text="Session Date"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
@@ -83,25 +95,20 @@
 
     <EditText
         android:id="@+id/SessionTime"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="228dp"
+        android:layout_height="49dp"
+        android:background="@drawable/user_inputs_rounded"
         android:ems="10"
         android:inputType="time"
         android:text="Session Time"
+        android:elevation="2dp"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.701" />
-
-    <com.google.android.material.chip.ChipGroup
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="124dp"
-        tools:layout_editor_absoluteY="268dp">
-
-    </com.google.android.material.chip.ChipGroup>
 
     <Switch
         android:id="@+id/OnlineSessionToggle"
@@ -122,15 +129,15 @@
         android:text="Walk-In"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.742"
+        app:layout_constraintHorizontal_bias="0.726"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.275" />
 
     <Spinner
         android:id="@+id/PreferedCounselours"
-        android:layout_width="252dp"
-        android:layout_height="35dp"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
@@ -138,16 +145,33 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.801" />
 
-    <Button
+    <ImageButton
         android:id="@+id/FinaliseSession"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Book Session!"
+        android:layout_width="205dp"
+        android:layout_height="77dp"
+        android:backgroundTint="#FFFFFF"
+        android:src="@drawable/finalise_session_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.929"
+        android:onClick="AddAppointment"/>
+
+    <TextView
+        android:id="@+id/FinaliseSessionTextView"
+        android:layout_width="156dp"
+        android:layout_height="34dp"
+        android:text="Book Session !"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.897" />
+        app:layout_constraintTop_toTopOf="@+id/textview_second"
+        app:layout_constraintVertical_bias="0.901" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
