@@ -16,41 +16,19 @@ import com.example.thembamobile.databinding.FragmentHomeBinding;
 public class Home extends Fragment {
 
     private FragmentHomeBinding binding;
-    private Button FindCounselorsButton;
-    private Button BookSessionButton;
 
-    private View HomeWindow;
+
+
     @Override
     public View onCreateView(
             LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState
     ) {
+        //Creating Fragment
+        View HomeWindow = inflater.inflate(R.layout.fragment_home, container, false);
 
 
-
-        HomeWindow = inflater.inflate(R.layout.fragment_home, container, false);
         //binding = FragmentHomeBinding.inflate(inflater, container, false);
-
-        //Initialize buttons
-        //FindCounselorsButton = HomeWindow.findViewById(R.id.FindCounselorsButton);
-        //BookSessionButton = HomeWindow.findViewById(R.id.BookSessionButton);
-
-        //Add logic to buttons
-        /*FindCounselorsButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                NavHostFragment.findNavController(Home.this)
-                        .navigate(R.id.openCounselorSearch);
-            }
-        });
-
-       BookSessionButton.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View view) {
-               NavHostFragment.findNavController(Home.this)
-                       .navigate(R.id.OpenBookingSession);
-           }
-       });*/
 
         return HomeWindow;
 
@@ -58,7 +36,6 @@ public class Home extends Fragment {
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
 
 
     }

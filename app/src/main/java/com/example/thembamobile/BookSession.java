@@ -53,7 +53,7 @@ public class BookSession extends Fragment {
 
         AppointmentsProcessing = new Appointments();
 
-        //binding = FragmentBooksessionBinding.inflate(inflater, container, false);
+        AddAppointment(BookSessionFragment);
         return BookSessionFragment;
 
     }

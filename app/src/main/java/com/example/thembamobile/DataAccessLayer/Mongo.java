@@ -28,7 +28,7 @@ public class Mongo {
 
     private String SetupDatabase(){
 
-        ConnectionToMongoDB = "mongodb+srv://MNgetu83:MuD8WnEf5zhhpHar@cluster0.vwavmzr.mongodb.net/?retryWrites=true&w=majority";
+        ConnectionToMongoDB = "mongodb+srv://MNgetu:JkkdNX3hVyE9erMI@cluster0.vwavmzr.mongodb.net/?retryWrites=true&w=majority";
 
         return ConnectionToMongoDB;
     }
